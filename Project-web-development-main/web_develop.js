@@ -193,7 +193,7 @@ function idd(){
     return idd_value;
 }
 
-function updateTime() {
+function updateClock() {
     const now = new Date();
     const hours = now.getHours();
     const minutes = now.getMinutes();
@@ -207,9 +207,9 @@ function updateTime() {
     }
   }
   
-  setInterval(updateTime, 1000);
+   setInterval(updateClock, 1000);
   
-  updateTime();
+   updateClock();
 
 
 
