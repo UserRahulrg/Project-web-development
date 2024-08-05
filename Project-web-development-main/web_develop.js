@@ -193,6 +193,24 @@ function idd(){
     return idd_value;
 }
 
+function updateTime() {
+    const now = new Date();
+    const hours = now.getHours();
+    const minutes = now.getMinutes();
+    const seconds = now.getSeconds();
+  
+    const clock = document.getElementById('clock');
+    clock.innerHTML = `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
+  
+    function pad(number) {
+      return (number < 10 ? '0' : '') + number;
+    }
+  }
+  
+  setInterval(updateTime, 1000);
+  
+  updateTime();
+
 
 
 
