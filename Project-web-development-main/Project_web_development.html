@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Web-Development</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./project_web_develop.css"> 
+        <script src="./web_develop.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header>
+            <div class="page_header">
+                <h2 align="center">Web-Development</h2>
+            </div>
+        </header>
+        
+        <h3 align="center">Customer Information</h3>
+        <table border="3px" align="center">    
+            <tr>
+                <td>Id</td>
+                <td><input id="txtid" placeholder="Enter Id"></td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td><input id="txtname" placeholder="Enter Name"></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><input id="txtaddress" placeholder="Enter Address"></td>
+            </tr>
+            <tr>
+                <td>Mobile No</td>
+                <td><input id="txtmobileno" placeholder="Enter Mobile No"></td>
+            </tr>
+            <tr>
+                <td>Image</td>
+                <td><input type="file" id="txtimage"></td>
+            </tr>
+            <tr>
+                <div class="button-view">
+                    <td>
+                        <button id="btnadd" onclick="btnadd_click()">Add</button>
+                        <button id="btnsearch" onclick="btnSearch_Click()">Search</button>
+                        <button id="btndelete" onclick="btnDelete_Click()">Delete</button>
+                        <button id="btnprevious">Prev</button>
+                        <button id="btnSaveData" onclick="btnSaveData_Click()">SaveData</button>
+                    </td>
+                </div>
+                <td>
+                    <button id="btnnext">Next</button>
+                    <button id="btnmodify" onclick="btnadd_click()">Modify</button>
+                    <button id="btntable" onclick="">Table</button>
+                    <button id="btnsubmit" onclick="btnadd_click()">Submit</button>
+                    <button id="btnremove" onclick="btn_remove_table_element()">Remove</button>
+                    <button id="btnloaddata" onclick="btnLoadData_Click()">LoadData</button>
+                </td>
+            </tr>
+        </table>
+
+        <table class="customer_table" id="customer" border="3px" align="center">
+            <tr>
+                <td>Remove</td>
+                <td>Id</td>
+                <td>Name</td>                                 
+                <td>Address</td>
+                <td>MobileNo</td>
+                <td>Image</td>
+            </tr>
+        </table>
+        <div class="image" align="center">
+            <img src="./images/Project6_image_edit.png">
+        </div>
+        <script src="./web_develop.js"></script>
+
+        <footer>
+            <div class="page_footer">
+                <tr>
+                    <td>Home</td>
+                </tr>
+                <tr>
+                    <td>Contact Us</td>
+                </tr>
+                <tr>
+                    <td>Project - Web-Development</td>
+                </tr>
+                <h4>Time</h4>
+                <tr>
+                    <td><button onclick="updateTime()" id="headingtime">Time</button></td>
+                </tr>
+            </div>
+        </footer>
+    </body>
+</html>
+
+
+
