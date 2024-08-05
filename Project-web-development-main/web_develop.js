@@ -193,23 +193,23 @@ function idd(){
     return idd_value;
 }
 
-function updateClock() {
-    const now = new Date();
-    const hours = now.getHours();
-    const minutes = now.getMinutes();
-    const seconds = now.getSeconds();
+// function updateClock() {
+//     const now = new Date();
+//     const hours = now.getHours();
+//     const minutes = now.getMinutes();
+//     const seconds = now.getSeconds();
   
-    const clock = document.getElementById('clock');
-    clock.innerHTML = `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
+//     const clock = document.getElementById('clock');
+//     clock.innerHTML = `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
   
-    function pad(number) {
-      return (number < 10 ? '0' : '') + number;
-    }
-  }
+//     function pad(number) {
+//       return (number < 10 ? '0' : '') + number;
+//     }
+//   }
   
-   setInterval(updateClock, 1000);
+//    setInterval(updateClock, 1000);
   
-   updateClock();
+//    updateClock();
 
 
 
